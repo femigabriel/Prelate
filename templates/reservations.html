@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- FONT AWESOME -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/root.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+
+    <!-- CSS -->
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="lg:px-20 w-full">
+      <div class="flex justify-between w-full">
+        <a href="./index.html">
+          <img src="../assets/logo.png" alt="Prelate Travels Logo" />
+        </a>
+
+        <div class="flex justify-between">
+          <nav class="">
+            <ul class="menu-desktop w-full">
+              <li><a href="./reservations.html">Reservations</a></li>
+              <li><a href="./travel-help.html">Travel Help</a></li>
+              <li><a href="./travel-insurance.html">Travel Insurance</a></li>
+              <li><a href="./travel-visa.html">Visa</a></li>
+              <li><a href="./Tour-deals.html">Tour</a></li>
+            </ul>
+
+            <ul class="menu-mobile">
+              <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+            </ul>
+          </nav>
+          <button class="menu-desktop">
+            <a href="./travels-blog.html" class="button w-full"
+              >Become an Affiliate</a
+            >
+          </button>
+        </div>
+      </div>
+      <!-- HTML structure for the side drawer component -->
+    </header>
+
+    <!-- HTML structure for the side drawer component -->
+    <div id="side-drawer" class="side-drawer">
+      <div class="drawer-content">
+        <!-- Place your content here -->
+        <i class="fa fa-bars" aria-hidden="true"></i>
+
+        <ul>
+          <li><a href="./reservations.html">Reservations</a></li>
+          <li><a href="./travel-help.html">Travel Help</a></li>
+          <li><a href="./travel-insurance.html">Travel Insurance</a></li>
+          <li><a href="./travel-visa.html">Visa</a></li>
+          <li><a href="./Tour-deals.html">Tour</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Slider -->
+    <!-- <div class="reservation-slide"></div> -->
+    <!-- Main screen Carousel -->
+   <section  class="main-slider">
+    <div
+    id="carouselExampleCaptions"
+    class="relative"
+    data-te-carousel-init
+    data-te-carousel-slide
+  >
+    <!--Carousel indicators-->
+    <div
+      class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none  justify-center p-0"
+      data-te-carousel-indicators
+    >
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide-to="0"
+        data-te-carousel-active
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide-to="1"
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide-to="2"
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-label="Slide 3"
+      ></button>
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide-to="3"
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-label="Slide 4"
+      ></button>
+    </div>
+
+    <!--Carousel items-->
+    <div
+      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+    >
+      <!--First item-->
+      <div
+        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-active
+        data-te-carousel-item
+        style="backface-visibility: hidden"
+      >
+        <img src="/images/slider 1.png" class="block w-full" alt="..." />
+      </div>
+      <!--Second item-->
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item
+        style="backface-visibility: hidden"
+      >
+        <img src="/images/slider 2.png" class="block w-full" alt="..." />
+        <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-white md:block"
+        >
+          <h3 class="text-[56px] leading-[84px] font-bold">
+            Explore .
+            <span class="text-[56px] leading-[84px] text-[#FFC702]"
+              >Asia</span
+            >
+          </h3>
+        </div>
+      </div>
+      <!--Third item-->
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item
+        style="backface-visibility: hidden"
+      >
+        <img src="/images/slider 3.png" class="block w-full" alt="..." />
+        <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
+        >
+          <!-- <h5 class="text-xl">Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p> -->
+          
+        </div>
+      </div>
+      <!--Fourth item-->
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item
+        style="backface-visibility: hidden"
+      >
+        <img src="/images/slider 4.png" class="block w-full" alt="..." />
+        <!-- <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
+        >
+          <h5 class="text-xl">Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div> -->
+      </div>
+    </div>
+
+    <!--Carousel controls - prev item-->
+    <button
+      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide="prev"
+    >
+      <span class="inline-block h-8 w-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Previous</span
+      >
+    </button>
+    <!--Carousel controls - next item-->
+    <button
+      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide="next"
+    >
+      <span class="inline-block h-8 w-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Next</span
+      >
+    </button>
+  </div>
+   </section>
+ <!-- Mobile Carousel -->
+ <section class="mobile-slider">
+  <div
+    id="carouselExampleCaptions"
+    class="relative"
+    data-te-carousel-init
+    data-te-carousel-slide
+  >
+    <!--Carousel indicators-->
+    <div
+      class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+      data-te-carousel-indicators
+    >
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide-to="0"
+        data-te-carousel-active
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide-to="1"
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide-to="2"
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-label="Slide 3"
+      ></button>
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide-to="3"
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-label="Slide 4"
+      ></button>
+    </div>
+
+    <!--Carousel items-->
+    <div
+      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+    >
+      <!--First item-->
+      <div
+        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-active
+        data-te-carousel-item
+        style="backface-visibility: hidden"
+      >
+        <img
+          src="/images/mobile slider 1.png"
+          class="block w-full"
+          alt="..."
+        />
+        <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
+        >
+          <h5 class="text-xl">First slide label</h5>
+          <p>
+            Some representative placeholder content for the first slide.
+          </p>
+        </div>
+      </div>
+      <!--Second item-->
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item
+        style="backface-visibility: hidden"
+      >
+        <img
+          src="/images/mobile slider 2.png"
+          class="block w-full"
+          alt="..."
+        />
+        <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
+        >
+          <h5 class="text-xl">Second slide label</h5>
+          <p>
+            Some representative placeholder content for the second slide.
+          </p>
+        </div>
+      </div>
+      <!--Third item-->
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item
+        style="backface-visibility: hidden"
+      >
+        <img
+          src="/images/mobile slider 3.png"
+          class="block w-full"
+          alt="..."
+        />
+        <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
+        >
+          <h5 class="text-xl">Third slide label</h5>
+          <p>
+            Some representative placeholder content for the third slide.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Carousel controls - prev item-->
+    <button
+      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide="prev"
+    >
+      <span class="inline-block h-8 w-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Previous</span
+      >
+    </button>
+    <!--Carousel controls - next item-->
+    <button
+      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide="next"
+    >
+      <span class="inline-block h-8 w-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Next</span
+      >
+    </button>
+  </div>
+</section>
+    <section class="w-full">
+      <div class="mobile-template">
+        <div class="bg-[#b2d4ef] w-full px-5 py-5 mt-5">
+          <div class="">
+            <button
+              class="py-3 px-8 pr-10 bg-[#1C2E6A] text-white rounded-[7px]"
+            >
+            Booking/Reservations
+        
+          </div>
+          <nav
+            class="flight-menu uppercase flex gap-5 text-[#1C2E6A] text-[14px] font-medium mt-8"
+          >
+            <li
+              class="border border-x-0 border-t-0 border-[#1C2E6A] border-b-2 font-semibold list-none"
+            >
+              Rounded Trip
+            </li>
+            <li class="list-none">One Way</li>
+            <li class="list-none">Multi-City</li>
+          </nav>
+          <div class="my-5 text-[#1C2E6A] text-[14px] font-medium">
+            <div
+              class="bg-white px-5 py-5 w-full flex flex-col mb-3 rounded-[7px]"
+            >
+              <span class="text-[#A9A9A9] text-[9px]">Depature</span>
+              <span class="">Nnamdi Azikiwa Airport</span>
+            </div>
+            <div
+              class="bg-white px-5 py-5 w-full flex flex-col mb-3 rounded-[7px]"
+            >
+              <span class="text-[#A9A9A9] text-[9px]">Depature</span>
+              <span class="text-[14px]">Nnamdi Azikiwa Airport</span>
+            </div>
+            <div
+              class="bg-white px-5 py-5 w-full grid grid-cols-2 mb-3 rounded-[7px]"
+            >
+              <div class="flex flex-col">
+                <span class="text-[#A9A9A9] text-[9px]">Depature Date</span>
+                <span class="">Jan 2, 2023</span>
+              </div>
+              <div class="flex-col flex">
+                <span class="text-[#A9A9A9] text-[9px]">Depature Date</span>
+                <span class="">Jan 2, 2023</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <button
+                class="bg-white px-5 py-2 flex rounded-[7px] justify-between"
+              >
+                1 Passenger
+                <img
+                  src="/images/down-arrow.svg"
+                  class="mt-2"
+                  alt="down_arrow"
+                />
+              </button>
+              <button
+                class="bg-white px-5 py-2 flex justify-between rounded-[7px]"
+              >
+                1 Passenger
+                <img
+                  src="/images/down-arrow.svg"
+                  class="mt-2"
+                  alt="down_arrow"
+                />
+              </button>
+            </div>
+            <button
+              class="bg-[#CA0000] mt-10 text-[#ffff] text-[14px] rounded-[7px] px-5 py-5"
+            >
+              Book now!
+            </button>
+          </div>
+        </div>
+  
+        <div class="px-5 py-5">
+          <p class="text-[#6A6A6A] text-[12px]">
+            Book available flights to any destination around the world, hotel reservation. Request airport pick-up at any destination of the world.
+          </p>
+        </div>
+       
+      </div>
+      <!-- <div class="reservation-hero">
+        <div class="flex justify-between lg:px-44 pt-[520px] template">
+          <h3 class="text-[56px] leading-[84px] font-bold text-[#fff]">
+            Explore .
+            <span class="text-[56px] leading-[84px] text-[#FFC702]">Asia</span>
+          </h3>
+          <img src="./images/lines.svg" alt="" />
+        </div>
+      </div> -->
+      <div class="lg:px-44 py-10 template">
+        <h3 class="font-semibold text-[46px] mb-8">Book Flight</h3>
+
+        <div>
+          <div
+            class="bg-[#B2D4EF] w-full max-w-[950px] h-[250px] rounded-[7px] px-5 py-10"
+          >
+            <!-- Dropdown menu -->
+            <div class="flex pb-5">
+              <button
+                data-dropdown-toggle="dropdown"
+                class="text-[#1C2E6A] bg-white flex w-[150.07px] justify-between rounded-[7px] p-3 text-15px font-bold"
+                type="button"
+              >
+                Round Trip
+                <img
+                  src="../images/arrow-down-icon.svg"
+                  class="w-[15px] ml-2 mt-1"
+                  alt="icon"
+                />
+              </button>
+              <button
+                data-dropdown-toggle="dropdown"
+                class="text-[#1C2E6A] bg-white mx-5 flex w-[150.07px] justify-between rounded-[7px] p-3 text-15px font-bold"
+                type="button"
+              >
+                1 Passenger
+                <img
+                  src="../images/arrow-down-icon.svg"
+                  class="w-[15px] ml-2 mt-1"
+                  alt="icon"
+                />
+              </button>
+              <button
+                data-dropdown-toggle="dropdown"
+                class="text-[#1C2E6A] bg-white flex w-[150.07px] justify-between rounded-[7px] p-3 text-15px font-bold"
+                type="button"
+              >
+                Economy
+                <img
+                  src="../images/arrow-down-icon.svg"
+                  class="w-[15px] ml-2 mt-1"
+                  alt="icon"
+                />
+              </button>
+            </div>
+            <!-- Book Card menu -->
+            <div class="flex">
+              <div
+                class="card bg-[#fff] w-[220.79px] text-[#A9A9A9] px-3 py-5 rounded-[7px]"
+              >
+                <p class="text-[13px]">Departure?</p>
+                <h3 class="text-[20px]">City or Airport</h3>
+              </div>
+              <div
+                class="card bg-[#fff] w-[220.79px] mx-5 text-[#A9A9A9] px-3 py-5 rounded-[7px]"
+              >
+                <p class="text-[13px]">Departure?</p>
+                <h3 class="text-[20px]">City or Airport</h3>
+              </div>
+              <div
+                class="flex bg-[#fff] w-[324.93px] text-[#A9A9A9] px-3 py-5 rounded-[7px]"
+              >
+                <div class="pr-7">
+                  <p class="text-[13px]">Departure Date</p>
+                  <h3 class="text-[20px] text-[#1C2E6A]">Jan 2, 2023</h3>
+                </div>
+                <div class="pl-7 return-card">
+                  <p class="text-[13px]">Return Date</p>
+                  <h3 class="text-[20px] text-[#1C2E6A]">Feb 2, 2023</h3>
+                </div>
+              </div>
+              <button
+                class="bg-[#CA0000] rounded-[7px] text-white ml-5 px-5 hover:bg-red-700"
+              >
+                Book!
+              </button>
+            </div>
+          </div>
+          <!-- Reservation card -->
+          <p class="text-[#6A6A6A] text-[14px] leading-[34px] my-10 w-[964px]">
+            Book available flights to any destination around the world, hotel
+            reservation. Request airport pick-up at any destination of the
+            world.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container affiliates_container lg:px-44 lg:py-10 w-full">
+        <div class="inner_wrapper">
+          <div class="imgs_container tp_sa_ta_am">
+            <img src="../assets/travelport.png" alt="Travelport logo" />
+            <img src="../assets/sabre.png" alt="Sabre logo" />
+            <img src="../assets/tripadvisor.png" alt="Tripadvisor logo" />
+            <img src="../assets/amadeus.png" alt="Amadeus logo" />
+          </div>
+
+          <div class="imgs_container tp_sa_ta_am">
+            <img src="../assets/visa.png" alt="visa logo" />
+            <img src="../assets/rupay.png" alt="rupay logo" />
+            <img src="../assets/flutterwave.png" alt="flutterwave logo" />
+            <img src="../assets/interswitch.png" alt="interswitch logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-footer_banner">
+      <div class="container footer_banner-container">
+        <img
+          src="../assets/mobile.png"
+          alt="Prelate Travels mobile app image"
+        />
+
+        <div class="text">
+          <h1 class="footer_banner-pr_tr_ap">Prelate Travels App</h1>
+          <h3 class="footer_banner-co_so">Coming soon...</h3>
+          <img src="../assets/store.png" alt="App Store Image" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav class="f-links">
+        <div class="f-links_wrapper">
+          <ul class="">
+            <h6>Service</h6>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">Travel help</a></li>
+            <li><a href="#">Travel Insurance</a></li>
+            <li><a href="#">Visa</a></li>
+            <li><a href="#">Tour</a></li>
+          </ul>
+          <ul class="">
+            <h6>Partners</h6>
+            <li><a href="#">Become an Affiliate</a></li>
+            <li><a href="#">Business travels</a></li>
+          </ul>
+
+          <ul class="">
+            <h6>Others</h6>
+            <li><a href="#">Term of service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="f-form_wrapper">
+          <ul class="f-form">
+            <h6>Join our News letter</h6>
+            <div class="newsletter-input_wr">
+              <input type="text" placeholder="Enter your full name" />
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <button class="button">Join</button>
+          </ul>
+        </div>
+      </nav>
+
+      <hr class="f-border" />
+
+      <ul class="icons_container">
+        <li>
+          <a href="#"><img src="../assets/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="../assets/instagram.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="../assets/twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="../assets/linkedin.png" alt="" /></a>
+        </li>
+      </ul>
+    </footer>
+    <script
+    type="text/javascript"
+    src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
+  ></script>
+    <div class="close-end"></div>
+  </body>
+  <script src="../js/header.js"></script>
+</html>

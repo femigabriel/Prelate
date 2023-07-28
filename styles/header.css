@@ -1,0 +1,109 @@
+header {
+  /* width: 90%; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin-right: 24px;
+}
+
+header a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+}
+header .button {
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.menu-mobile {
+  display: none;
+  color: var(--primary-color);
+}
+
+.fa-bars {
+  font-size: 22px;
+}
+
+/* CSS styles for the side drawer component start */
+.side-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+  transition: 0.1s;
+  z-index: 9999;
+}
+
+.drawer-content {
+  padding-left: 20px;
+  padding-top: 30px;
+  /* padding: 20px; */
+}
+
+.drawer-content .fa-bars {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.drawer-content ul li {
+  width: 150px;
+  border-top: 1px solid #2a4295;
+  padding: 15px 0;
+}
+
+.drawer-content ul li:first-child {
+  border-top: 0px;
+}
+
+.drawer-content ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.drawer-open {
+  width: 90%;
+}
+
+/* CSS styles for the side drawer component end */
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  header img {
+    width: 50%;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  header li {
+    margin: 0;
+  }
+}

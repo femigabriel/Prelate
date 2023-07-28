@@ -1,0 +1,578 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.template {
+  font-size: 20px;
+  height: 100%;
+  padding: 20px 10px;
+  color: #1c2e6a;
+}
+.main-slider {
+  display: block;
+}
+.mobile-slider {
+  display: none;
+}
+.hero-image {
+  background: url(../images/slider\ 1.png);
+  height: 632.71px;
+  width: 100%;
+}
+.study-services {
+  display: block;
+}
+.mobile-template {
+  display: none;
+}
+.prelate-travels {
+  display: block;
+}
+.reservation-slide {
+  display: none;
+}
+/* SLider background images */
+.slider-1 {
+  background: url(/images/slider\ 1.png);
+  width: 100%;
+  height: 70vh;
+}
+.slider-2 {
+  /* background:  */
+  background: linear-gradient(180deg, #1c2e6a 0%, rgba(0, 0, 0, 0) 100%),
+  url(/images/slider\ 2.png);
+  width: 100%;
+  height: 70vh;
+}
+/* .slider-3 {
+  background: linear-gradient(180deg, #1c2e6a 0%, rgba(0, 0, 0, 0) 100%),
+  url(/images/visa-hero.png);
+  width: 100%;
+  height: 70vh;
+} */
+
+
+@media screen and (max-width: 768px) {
+  .template {
+    padding: 0;
+    display: none;
+  }
+  .main-slider {
+    display: none;
+  }
+  .mobile-slider {
+    display: block;
+  }
+  .mobile-template {
+    display: block;
+    width: 100%;
+  }
+  .study-services {
+    display: none;
+  }
+  .prelate-travels {
+    display: none;
+  }
+}
+.reservation-hero {
+  width: 100%;
+  /* height: 697px; */
+  background: linear-gradient(180deg, #1c2e6a 0%, rgba(0, 0, 0, 0) 100%);
+}
+.travel-info-hero {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #1c2e6a 0%, rgba(0, 0, 0, 0) 100%),
+    url(/images//slider\ 3.png);
+}
+.travel-insurance-hero {
+  width: 100%;
+  height: 531px;
+  background: linear-gradient(180deg, #1c2e6a 0%, rgba(0, 0, 0, 0) 100%),
+    url(../images/insurance-hero.png);
+  background-repeat: no-repeat;
+}
+
+.visa-hero {
+  width: 100%;
+  /* height: 531px; */
+  background: linear-gradient(180deg, #1c2e6a 0%, rgba(0, 0, 0, 0) 100%),
+    url(../images/visa-hero.png);
+  background-repeat: no-repeat;
+}
+.travel-help-mobile-slider {
+  display: none;
+}
+.travel-info-nav {
+  display: block;
+}
+.travel-info-nav-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hero-image {
+    background: url(../images/mobile\ slider\ 1.png);
+    height: 80px;
+    width: 100%;
+    max-width: 429px;
+  }
+  .visa-hero {
+    width: 100%;
+    height: 149px;
+    background: linear-gradient(180deg, #1c2e6a 0%, rgba(0, 0, 0, 0) 100%),
+      url(../images/visa-hero-mobile.png);
+    background-repeat: no-repeat;
+  }
+  .travel-insurance-hero {
+    width: 100%;
+    height: 149px;
+    background: linear-gradient(180deg, #1c2e6a 0%, rgba(0, 0, 0, 0) 100%),
+      url(../images/travel-visa-mobile.png);
+    background-repeat: no-repeat;
+  }
+
+  .reservation-hero {
+    display: none;
+  }
+  .reservation-slide {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background: url(/images/slider-2\ mobile.png);
+    opacity: 0.89;
+    background-repeat: no-repeat;
+  }
+  .travel-help-mobile-slider {
+    display: block;
+    background: url(../images/image\ 10\ .png);
+    width: 100%;
+    height: 216px;
+    background-repeat: no-repeat;
+  }
+  .travel-info-nav {
+    display: none;
+  }
+  .travel-info-nav-mobile {
+    display: block;
+  }
+}
+.travel-insurance-hero h2 {
+  display: block;
+}
+.post-arrival-hero {
+  width: 100%;
+  /* height: 100%; */
+  background: url(../images/post-arrival-hero.png);
+}
+.post-arrival-hero img {
+  width: 920px;
+  height: 424px;
+}
+
+@media screen and (max-width: 768px) {
+  .travel-info-mobile-slider {
+    width: 100%;
+    height: 80px;
+    background: url(../images/mobile\ header\ 4.png);
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+  .post-arrival-hero {
+    height: 196px;
+    width: 100%;
+    background: url(../images/post-arrival-mobile.png);
+    background-repeat: no-repeat;
+  }
+  .post-arrival-hero h2 {
+    padding: 0 40px;
+  }
+  .post-arrival-hero img {
+    width: 308px;
+    height: 142px;
+    top: 50px;
+    left: 8px;
+    position: relative;
+  }
+  .travel-insurance-hero h2 {
+    display: none;
+  }
+}
+.tour-hero {
+  width: 100%;
+  height: 309px;
+  background: url(../images/tour-hero.png);
+  background-repeat: no-repeat;
+}
+.tour-hero-header {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .tour-hero-header {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tour-hero {
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(360deg, #051139 0%, rgba(5, 17, 57, 0) 100%),
+      url(../images/tour-hero-mobile.png);
+    background-repeat: no-repeat;
+  }
+}
+.about-travels-hero {
+  background: linear-gradient(0deg, #1c2e6a, #1c2e6a);
+  width: 100%;
+  height: 309px;
+}
+@media screen and (max-width: 768px) {
+  .about-travels-hero {
+    width: 100%;
+    height: 149px;
+  }
+}
+.tour-abroad-hero {
+  background: url(../images/abroad-hero.png);
+  width: 100%;
+  height: 445px;
+}
+.tour-abroad-hero-content {
+  display: none;
+}
+.mobile-header {
+  display: none;
+}
+.mobile-header-2 {
+  display: none;
+}
+.mobile-header-3 {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .tour-abroad-hero {
+    background: url(../images/abroa-hero-mobile.png);
+    width: 100%;
+    height: 308px;
+  }
+  .mobile-header {
+    display: block;
+    background: url(../images/mobile-header.png);
+    width: 100%;
+    height: 74px;
+    margin-bottom: 10px;
+  }
+  .tour-abroad-hero-content {
+    display: block;
+  }
+  .mobile-header-2 {
+    display: block;
+    background: url(../images/mobile-header-2.png);
+    width: 100%;
+    height: 74px;
+    margin-bottom: 10px;
+  }
+  .mobile-header-3 {
+    display: block;
+    background: linear-gradient(
+        90.47deg,
+        #1c2e6a 2.95%,
+        rgba(28, 46, 106, 0) 100.04%
+      ),
+      url(../images/mobile-header-3.png);
+    width: 100%;
+    height: 74px;
+    margin-bottom: 10px;
+  }
+}
+.tour-hero-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .tour-hero-mobile {
+    display: block;
+  }
+  .tour-hero-mobile h3 {
+    display: block;
+  }
+  .study-card-1 {
+    background: url(../images/australia\ mobile.png);
+    width: 100%;
+    height: 309px;
+    margin-bottom: 20px;
+  }
+  .study-card-2 {
+    background: url(../images/canada\ mobile.png);
+    width: 100%;
+    height: 309px;
+    margin-bottom: 20px;
+  }
+  .study-card-3 {
+    background: url(../images/united\ mobile.png);
+    width: 100%;
+    height: 309px;
+    margin-bottom: 40px;
+  }
+  .gray {
+    background: linear-gradient(180deg, #1c2e6a 100%, #1c2e6a 0%);
+    width: 376px;
+    height: 160px;
+  }
+}
+.tour-card {
+  width: 290.87px;
+  height: 390.99px;
+  background: linear-gradient(
+    180deg,
+    #000000 15.41%,
+    rgba(12, 12, 12, 0) 82.42%
+  );
+  border-radius: 3px;
+  margin-bottom: 40px;
+}
+.return-card {
+  border-left: 1px solid #d4d4d4;
+}
+.travel-info {
+  color: #1c2e6a;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border-bottom: 1px solid #d1d1d1;
+}
+.travel-info ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.travel-info li {
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.travel-info li.active {
+  background: #1c2e6a;
+  border-radius: 7px;
+  width: 147px;
+  height: 51px;
+  color: #ffffff;
+}
+
+.travel-info li:hover {
+  background: #1c2e6a;
+  border-radius: 7px;
+  color: #ffffff;
+}
+.tour-abroad-content {
+  width: 932px;
+  padding: 0 220px;
+}
+@media screen and (max-width: 768px) {
+  .tour-abroad-content {
+    width: 402px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+    padding: 0 40px;
+  }
+  .about-travels-hero-content {
+    padding: 60px 40px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 26px;
+    color: #ffffff;
+  }
+}
+.overlay {
+  position: relative;
+  z-index: 1;
+  top: 50px;
+}
+.travel-info-content {
+  display: block;
+}
+.travel-insurance p {
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .travel-insurance {
+    display: block;
+    padding: 0 20px;
+  }
+  .travel-insurance form {
+    width: 330px;
+  }
+  .travel-form {
+    padding: 0 20px;
+  }
+  .travel-info-content {
+    display: none;
+  }
+}
+
+.travel-insurance p {
+  margin-top: 20px;
+}
+.postal-book {
+  background: #1c2e6a;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 775px;
+  color: #ffffff;
+}
+.travel-insurance h3 {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .travel-insurance h3 {
+    display: none;
+  }
+  .postal-book {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #1c2e6a;
+    background: none;
+  }
+  .book-payment {
+    background: #9b0000;
+    border-radius: 7px;
+    width: 295px;
+    height: 29px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 27px;
+    color: #ffffff;
+    padding: 0px 5px;
+  }
+}
+.arrival-btn {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .arrival-btn {
+    display: block;
+    background: #ffc702;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 27px;
+    color: #1c2e6a;
+    padding: 5px 10px;
+  }
+}
+.tour-card-main {
+  display: block;
+}
+.tour-card-mobile {
+  display: none;
+}
+.visa-form-title {
+  background: #1c2e6a;
+  color: white;
+  border-radius: 7px;
+  max-width: 775px;
+}
+.travel-form-content h2 {
+  display: block;
+}
+.travel-form-content p {
+  display: block;
+}
+.travel-form-content span {
+  display: none;
+}
+.travel-form-btn {
+  display: block;
+}
+.travel-form-mobile-btn {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .travel-form-content h2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tour-card-main {
+    display: none;
+  }
+  .tour-card-mobile {
+    display: block;
+  }
+  .tour-card-mobile img {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 30px 20px;
+    width: 100%;
+    /* height: 203px; */
+  }
+  .visa-form-title {
+    background: none;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #1c2e6a;
+    max-width: 330px;
+    width: 100%;
+  }
+  .travel-form-content p {
+    display: none;
+  }
+  .travel-form-content span {
+    display: block;
+    font-size: 9px;
+    line-height: 16px;
+    text-align: justify;
+    color: #6a6a6a;
+    width: 36em;
+    margin: 20px 0px;
+  }
+  .travel-form-btn {
+    display: none;
+  }
+  .travel-form-mobile-btn {
+    display: block;
+  }
+  label {
+    font-size: 10px;
+    /* text-transform: none; */
+  }
+}
+.scroll-inner {
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+	&::-webkit-scrollbar:horizontal {
+		height: 10px;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: transparentize(#ccc, 0.7);
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background: transparentize(#ccc, 0.5);
+		box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	}
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 100%;
+
+  .card {
+    display: inline-block;
+  }
+}
